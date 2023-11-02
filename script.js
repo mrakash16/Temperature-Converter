@@ -19,7 +19,7 @@ document.getElementById("convertBtn").addEventListener("click", function () {
     } else {
         convertedTemperature = (temperatureInput - 32) * 5 / 9;
         resultElement.textContent = `${temperatureInput} Fahrenheit is equal to ${convertedTemperature.toFixed(2)} Celsius.`;
-        color = (convertedTemperature < 0) ? "lightblue" : (convertedTemperature > 30) ? "red" : "lighgreen";
+        color = (convertedTemperature < 0) ? "lightblue" : (convertedTemperature > 30) ? "red" : "lightgreen";
 
     }
 
