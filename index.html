@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="converter-container">
+        <h1><i class="fas fa-thermometer-half"></i> Temperature Converter</h1>
+        <div class="input-group">
+            <i class="fas fa-temperature-high"></i> <!-- Thermometer icon -->
+            <input type="number" id="temperatureInput" placeholder="Enter temperature" required>
+            <select id="unitSelect">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <button id="convertBtn"><i class="fas fa-long-arrow-alt-right"></i> Convert</button>
+        <button id="clearBtn"><i class="fas fa-sync-alt"></i> Clear</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
